@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ListView
+                android:id="@+id/optionsListView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+            </ListView>
+
+            <ImageButton
+                android:id="@+id/addOption"
+                android:text="Dodaj novu opciju"
+                android:layout_gravity="center"
+                android:onClick="addOption_onClick"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="#00000000"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/ic_menu_add" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
